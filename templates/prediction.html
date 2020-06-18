@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prediction</title>
+	<link rel="stylesheet" type="text/css" href="../static/predictionStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="project">
+		<div class=menu1>
+	<nav class="nav">
+	<ul class="menu">
+		<li class="heading">The Suburbs</li>
+		<p class="para1">The most delighted journey.</p>
+		<li class="menu_item"><a href="{{ url_for('home') }}"> Home </a><ul class="sub_menu">
+			
+		</ul>  </li>
+		<li class="menu_item"><a href="#"> Services </a>
+		<ul class="sub_menu">
+			<li class="submenu_item"><a href="{{ url_for('predict') }}"> Heart Disease Prediction </a></li>
+			
+		</ul> 
+	</li>
+		
+		</li>
+		<li class="menu_item"><a href="#"> About </a><ul class="sub_menu">
+			<li class="submenu_item"><a href="{{ url_for('about') }}"> About </a></li>
+			
+		</ul>  </li> 
+		</ul>
+	
+	
+	<input class="search" type="text" placeholder="Search...">
+		<button class="searchbtn">Search</button>
+	
+	</nav>
+	</div>
+	<div class="icon">
+	<a class="btn" href="#"><i class="fa fa-facebook"></i></a>
+	<a class="btn" href="#"><i class="fa fa-instagram"></i></a>
+    <a class="btn" href="#"><i class="fa fa-google"></i></a>
+    <a class="btn" href="#"><i class="fa fa-twitter"></i></a>
+    <a class="btn" href="#"><i class="fa fa-youtube"></i></a>
+
+
+</div>
+<div class="predictionFrame">
+	<div class="prediction">
+	<form action="{{ url_for('result') }}" method="POST">
+	<input class="search1" type="text" placeholder="Age" name="age">
+	<input class="search1" type="text" placeholder="Gender" name="sex">
+	<input class="search1" type="text" placeholder="Cp" name="cp">
+	<input class="search1" type="text" placeholder="Trestbps" name="trestbps">
+	<input class="search1" type="text" placeholder="Chol" name="chol">
+	<input class="search1" type="text" placeholder="Fbs" name="fbs">
+	<input class="search1" type="text" placeholder="Restecg" name="restecg">
+	<input class="search1" type="text" placeholder="Thalach" name="thalach">
+	<input class="search1" type="text" placeholder="Exang" name="exang">
+	<input class="search1" type="text" placeholder="Oldpeak" name="oldpeak">
+	<input class="search1" type="text" placeholder="Slope" name="slope">
+	<input class="search1" type="text" placeholder="Ca" name="ca">
+	<input class="searchbtn2" type="text" placeholder="thal" name="thal"><br>
+	<br>
+	<input class="button1" type="submit" name="button" value="Submit">
+	</form>
+
+	</div>
+</div>
+</body>

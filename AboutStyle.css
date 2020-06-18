@@ -1,0 +1,98 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: Comic Sans MS, Comic Sans, cursive;
+	font-size: 16px;
+	background-image: url(123.jpg);
+	background-repeat: none;
+	background-position: 0% 0%;
+	background-origin: content-box;
+
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 4px;
+ background-color:  #404040;
+ opacity: 0.8;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(35deg, #7300e6, #1f004d);
+
+  border-radius: 4px;
+}
+.nav{
+	width: 100%;
+	background-image: linear-gradient(to bottom right, #330066 ,black );
+	color: #fff;
+	opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+.menu{
+	line-height: 45px;
+	font-weight: 700;
+	text-transform: uppercase; 
+
+}
+.nav ul{
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+}
+.nav .menu .menu_item{
+	display: inline-block;
+	position: relative;
+
+}
+.nav .menu .menu_item a{
+	padding: 12px 24px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+.sub_menu{
+	text-transform: none;
+	display: none;
+position: absolute;
+width: 220px;
+background-color: rgba(0,0,0,0.8);
+
+}
+.menu_item:hover .sub_menu{
+	display: block;
+
+}
+.submenu_item{
+	border-left: 4px solid transparent;
+}
+.submenu_item:hover{
+	background-color: rgba(0,0,0,0.6);
+	border-left: 4px solid purple;
+
+}
+.menu_item:hover{
+	background-color: #00004d;
+	border-radius: 2px;
+}
+.fa-facebook:hover{
+	background-image: linear-gradient(to bottom right, dodgerblue, purple );
+	
+}
+.fa-instagram:hover{
+	background-image: linear-gradient(to bottom right, dodgerblue, purple );
+	
+}
+.fa-twitter:hover{
+	background-image: linear-gradient(to bottom right, dodgerblue, purple );
+	
+}
+.fa-google:hover{
+	background-image: linear-gradient(to bottom right, dodgerblue, purple );
+	
+}
+.fa-youtube:hover{
+	background-image: linear-gradient(to bottom right, dodgerblue, purple );
+	
+}
