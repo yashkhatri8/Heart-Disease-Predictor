@@ -1,1 +1,1 @@
-web: gunicorn heartDiseasePrediction
+web: gunicorn run heartDiseasePrediction.py
