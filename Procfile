@@ -1,1 +1,1 @@
-web: gunicorn wsgi:heartDiseasePrediction
+web: gunicorn app:heartDiseasePrediction
