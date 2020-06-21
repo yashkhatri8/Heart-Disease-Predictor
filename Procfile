@@ -1,1 +1,1 @@
-web: gunicorn heartDiseasePrediction:app
+web: gunicorn heartDiseasePrediction.py:app
