@@ -4,8 +4,8 @@ import numpy as np
 
 import pickle
 
-filename='heart-Disease-prediction.pkl'
-prediction=pickle.load(open(filename,'rb'))
+
+
 
 @app.route('/')
 @app.route('/main')
@@ -38,9 +38,7 @@ def result():
     slope = int(request.form['slope'])
     ca = int(request.form['ca'])
     thal = int(request.form['thal'])
-    predictData=np.array([[age,gender,cp,restbp,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]])
-    result=prediction.predict(predictData)
-    print(result)
+    predictData=np.array([[age,gender,cp,restbp,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]]
     return render_template("result.html",output=result)
 
 
