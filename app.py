@@ -2,7 +2,6 @@ from flask import Flask,render_template,request,url_for
 app=Flask(__name__)
 import numpy as np
 
-import pickle
 
 
 
@@ -38,14 +37,7 @@ def result():
     slope = int(request.form['slope'])
     ca = int(request.form['ca'])
     thal = int(request.form['thal'])
-    predictData=np.array([[age,gender,cp,restbp,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal]]
-    return render_template("result.html",output=result)
-
-
-
-
-
-
+    return render_template("result.html")
 
 
 if __name__ == '__main__':
