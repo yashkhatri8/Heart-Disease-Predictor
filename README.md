@@ -6,4 +6,5 @@ The website welcome page introduces you with <b> What are heart diseases? </b> t
 <br>
 <b>A glance of the Web App:</b>
 
+<img src="https://github.com/yashkhatri8/Heart-Disease-Predictor/blob/master/static/Capture.JPG" >
 
