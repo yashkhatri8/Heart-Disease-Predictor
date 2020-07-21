@@ -37,7 +37,8 @@ def result():
     slope = int(request.form['slope'])
     ca = int(request.form['ca'])
     thal = int(request.form['thal'])
-    return render_template("result.html")
+    
+    return render_template("result.html",prediction=cp)
 
 
 if __name__ == '__main__':
