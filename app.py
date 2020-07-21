@@ -38,7 +38,7 @@ def result():
     ca = int(request.form['ca'])
     thal = int(request.form['thal'])
     
-    return render_template("result.html",prediction=cp)
+    return render_template("result.html",output=cp)
 
 
 if __name__ == '__main__':
