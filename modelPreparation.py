@@ -2,6 +2,7 @@ import numpy as np
 from pandas import read_csv
 import pickle
 data=read_csv("heart.csv")
+#this is fine
 
 
 data['thal']=data.thal.fillna(data.thal.mean())
