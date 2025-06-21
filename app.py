@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request,url_for
 app=Flask(__name__)
+#added comments
 import numpy as np
 import pickle, os
 
@@ -9,6 +10,8 @@ import pickle, os
 @app.route('/')
 @app.route('/main')
 def home():
+    # Load the model
+    model_path = os.path.join(os.getcwd(), 'heart-Disease-prediction.pkl')
     return render_template("main.html")
 
 
