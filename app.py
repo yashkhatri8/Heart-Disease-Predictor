@@ -5,7 +5,7 @@ import numpy as np
 import pickle, os
 
 
-
+#This is not okay.
 
 @app.route('/')
 @app.route('/main')
