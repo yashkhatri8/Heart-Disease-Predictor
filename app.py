@@ -39,7 +39,7 @@ def result():
     oldpeak = float(request.form['oldpeak'])
     slope = int(request.form['slope'])
     ca = int(request.form['ca'])
-    thal = int(request.form['thal'])
+    thal = int(request.form['thala'])
     
     return render_template("result.html",output=cp)
 
